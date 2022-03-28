@@ -7,14 +7,9 @@
 		<dependency>
 			<groupId>org.spigotmc</groupId>
 			<artifactId>spigot</artifactId>
-			<version>1.18.1-R0.1-SNAPSHOT</version>
+			<version>1.18.2-R0.1-SNAPSHOT</version>
 			<classifier>remapped-mojang</classifier>
 			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>conj.api</groupId>
-			<artifactId>conj-api</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 	<build>
