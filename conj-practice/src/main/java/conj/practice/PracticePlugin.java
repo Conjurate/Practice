@@ -8,7 +8,7 @@ public class PracticePlugin extends JavaPlugin {
 	public static boolean debug = true;
 	
 	public void onEnable() {
-		
+		Bukkit.getPluginManager().registerEvents(new PracticeListener(),this);
 	}
 	
 	public void onDisable() {
