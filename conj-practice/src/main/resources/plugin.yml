@@ -1,0 +1,10 @@
+main: conj.practice.PracticePlugin
+name: Practice
+version: '1.0'
+description: Practice plugin
+load: POSTWORLD
+author: Conjurate
+api-version: 1.13
+commands:
+  practice:
+   description: Practice plugin command.
