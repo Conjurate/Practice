@@ -9,6 +9,7 @@ public class PracticePlugin extends JavaPlugin {
 	
 	public void onEnable() {
 		Bukkit.getPluginManager().registerEvents(new PracticeListener(),this);
+		Bukkit.getPluginManager().registerEvents(new SpleefListener(), this);
 	}
 	
 	public void onDisable() {
