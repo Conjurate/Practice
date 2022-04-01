@@ -29,7 +29,7 @@ public class PracticeListener implements Listener {
 	public void interactBlock(PlayerInteractEvent e) {
 		Player p = e.getPlayer();
 		Block b = e.getClickedBlock();
-		if (e.getHand() == EquipmentSlot.HAND) {
+		if (b != null && e.getHand() == EquipmentSlot.HAND) {
 			if (b.getType() == Material.GOLD_BLOCK) {
 				b.setType(Material.GLOWSTONE);
 			} else if(b.getType() == Material.DIAMOND_BLOCK && e.getAction() == Action.RIGHT_CLICK_BLOCK) {
@@ -78,7 +78,7 @@ public class PracticeListener implements Listener {
 		Block b = e.getClickedBlock();
 		Player player = e.getPlayer();
 		if (e.getHand() == EquipmentSlot.HAND) {
-			if (b.getType() == Material.GRASS_BLOCK && e.getAction() == Action.RIGHT_CLICK_BLOCK) {
+			if (b != null && b.getType() == Material.GRASS_BLOCK && e.getAction() == Action.RIGHT_CLICK_BLOCK) {
 				player.getWorld().playSound(player, Sound.ENTITY_VILLAGER_YES, 10, 1);
 			}
 		}
